@@ -30,7 +30,7 @@
             margin: auto;
             transform-style: preserve-3d;
             perspective: 800px;
-            animation: rot 15s linear infinite;
+/*             animation: rot 15s linear infinite; */
         }
         
         @keyframes rot {
@@ -64,6 +64,7 @@
             color: red;
             transform-style: preserve-3d;
             transform: translateZ(50px);
+			animation: rot 10s linear infinite;
         }
         
         .cube div {
@@ -114,15 +115,16 @@
 			position: absolute;
 			width:100%;
 			top:10%;
-			left:20%;
+			left:5%;
+			padding-right:5%;
 		}
     </style>
 </head>
 
 <body>
-<!--     <embed height="0" width="0" src="./renxi.mp3" /> -->
 	<div id="love" class='love'>
 		<p>想要不一样的，那咱就来点不一样的，想要有技术含量的，那就来点有技术含量的</p>
+		<br />
 		<p>2020, hanppy new year .</p>
 	</div>
     <div class="heart">
@@ -165,7 +167,6 @@
                 n = 0;
             }
         }, 1000)
-        console.log(n)
         heart.appendChild(oDiv);
     }
 
